@@ -6,4 +6,5 @@ feature 'User sign up' do
     expect(page).to have_content('Welcome, alexis@carlier.com')
     expect(User.first.email).to eq('alexis@carlier.com')
   end
+
 end
