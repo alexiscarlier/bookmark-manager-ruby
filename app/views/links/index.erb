@@ -3,9 +3,9 @@
 <ul id='links'>
   <% @links.each do |link| %>
     <li>
-      Author: <%= user.username %>
       Title: <%= link.title %>
       URL:   <%= link.url   %>
+      Tags: <%= link.tags %>
     </li>
   <% end %>
 </ul>

@@ -11,6 +11,9 @@ class BookmarkManager < Sinatra::Base
   enable :sessions
   set :session_secret, 'super secret'
 
+  get '/' do
+    erb :'homepage'
+  end
 
   get '/links' do
     @links = Link.all
